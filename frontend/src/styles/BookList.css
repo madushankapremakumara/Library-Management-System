@@ -1,0 +1,195 @@
+.lms-books-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+ 
+.lms-book-card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+ 
+.lms-book-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+ 
+.lms-book-cover {
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  position: relative;
+  overflow: hidden;
+}
+ 
+.lms-book-cover::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, transparent 60%, rgba(0,0,0,0.3));
+}
+ 
+.lms-book-body {
+  padding: 1.1rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+ 
+.lms-book-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.25rem;
+}
+
+.lms-category-badge {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #6366f1;
+  background: rgba(99, 102, 241, 0.1);
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  letter-spacing: 0.05em;
+}
+
+.lms-isbn-hint {
+  font-size: 0.65rem;
+  color: var(--gray-400);
+  font-family: monospace;
+}
+
+.lms-book-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--navy);
+  line-height: 1.2;
+}
+
+.lms-book-authors {
+  font-size: 0.8rem;
+  color: var(--navy-light);
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.lms-book-desc {
+  font-size: 0.8rem;
+  color: var(--gray-600);
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.lms-inventory-status {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.lms-inventory-bar {
+  height: 6px;
+  background: var(--gray-100);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.lms-inventory-fill {
+  height: 100%;
+  background: var(--primary-gradient);
+  border-radius: 10px;
+  transition: width 0.3s ease;
+}
+
+.lms-inventory-text {
+  font-size: 0.75rem;
+  color: var(--gray-600);
+  font-weight: 500;
+}
+ 
+.lms-book-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--gray-200);
+}
+ 
+.lms-book-action-btn {
+  background: none;
+  border: none;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+  transition: all 0.15s;
+}
+ 
+.lms-book-action-btn.borrow { color: var(--navy-light); }
+.lms-book-action-btn.borrow:hover { background: var(--gray-100); }
+.lms-book-action-btn.return { color: var(--danger); }
+.lms-book-action-btn.return:hover { background: #fef1f2; }
+ 
+.lms-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 0.25rem 0.6rem;
+  border-radius: 20px;
+}
+ 
+.lms-badge.available { background: #e8f5ee; color: var(--success); }
+.lms-badge.unavailable { background: #fef1f2; color: var(--danger); }
+ 
+.lms-see-more-wrap { display: flex; justify-content: center; margin-bottom: 2.5rem; }
+ 
+.lms-see-more-btn {
+  padding: 0.7rem 2.5rem;
+  border-radius: 50px;
+  border: 2px solid var(--gray-200);
+  background: var(--white);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--gray-600);
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: var(--shadow-sm);
+}
+ 
+.lms-see-more-btn:hover {
+  border-color: var(--navy-light);
+  color: var(--navy);
+  box-shadow: var(--shadow-md);
+}
+ 
+.lms-no-results {
+  text-align: center;
+  color: var(--gray-400);
+  padding: 3rem 1rem;
+  font-size: 1rem;
+  grid-column: 1/-1;
+}

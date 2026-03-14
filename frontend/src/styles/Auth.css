@@ -1,0 +1,119 @@
+.lms-auth-container {
+  min-height: calc(100vh - 128px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: var(--cream);
+}
+ 
+.lms-auth-card {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: var(--shadow-lg);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+ 
+.lms-auth-header {
+  text-align: center;
+}
+ 
+.lms-auth-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.75rem;
+  color: var(--navy);
+  margin-bottom: 0.5rem;
+}
+ 
+.lms-auth-subtitle {
+  font-size: 0.9rem;
+  color: var(--gray-600);
+}
+ 
+.lms-auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+ 
+.lms-auth-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+ 
+.lms-auth-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--navy-light);
+}
+ 
+.lms-auth-input {
+  padding: 0.8rem 1rem;
+  border: 2px solid var(--gray-200);
+  border-radius: var(--radius);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+ 
+.lms-auth-input:focus {
+  border-color: var(--navy-light);
+}
+ 
+.lms-auth-submit-btn {
+  background: var(--navy);
+  color: white;
+  border: none;
+  padding: 0.9rem;
+  border-radius: var(--radius);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-top: 0.5rem;
+}
+ 
+.lms-auth-submit-btn:hover {
+  background: var(--navy-light);
+}
+ 
+.lms-auth-footer {
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--gray-600);
+}
+ 
+.lms-auth-link {
+  color: var(--navy);
+  font-weight: 600;
+  text-decoration: none;
+}
+ 
+.lms-auth-link:hover {
+  text-decoration: underline;
+}
+ 
+.lms-auth-checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--navy-light);
+  cursor: pointer;
+}
+ 
+.lms-auth-checkbox {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}

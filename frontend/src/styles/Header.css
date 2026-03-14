@@ -1,0 +1,67 @@
+.lms-nav {
+  background: var(--navy);
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  height: 64px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.2);
+}
+ 
+.lms-nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-right: auto;
+  text-decoration: none;
+}
+ 
+.lms-nav-brand-icon { font-size: 1.4rem; }
+ 
+.lms-nav-brand-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  color: #ffffff;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
+.lms-nav-brand-text sub {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.6rem;
+  opacity: 0.6;
+  margin-left: 4px;
+  vertical-align: baseline;
+  position: relative;
+  bottom: -2px;
+  text-transform: lowercase;
+}
+ 
+.lms-nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+ 
+.lms-nav-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 0.85rem;
+  border-radius: 8px;
+  background: transparent;
+  border: none;
+  color: rgba(255,255,255,0.75);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+ 
+.lms-nav-btn:hover { background: rgba(255,255,255,0.08); color: white; }
+.lms-nav-btn span { font-size: 1rem; }

@@ -1,0 +1,33 @@
+.lms-bottom-grid {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  align-items: start;
+}
+ 
+.lms-quick-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+ 
+.lms-quick-action-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.85rem 1rem;
+  background: var(--white);
+  border: 2px solid var(--gray-200);
+  border-radius: var(--radius);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--navy);
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: var(--shadow-sm);
+}
+ 
+.lms-quick-action-btn:hover { border-color: var(--navy-light); background: var(--gray-100); }
+.lms-quick-action-btn.active { border-color: var(--navy); background: var(--navy); color: #ffffff; }

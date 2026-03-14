@@ -1,0 +1,24 @@
+.lms-footer {
+  background: var(--gray-200);
+  padding: 1.5rem 2rem;
+  text-align: center;
+}
+ 
+.lms-footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 0.5rem;
+}
+ 
+.lms-footer-link {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--navy-light);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+ 
+.lms-footer-link:hover { color: var(--navy); }
+ 
+.lms-footer-copy { font-size: 0.78rem; color: var(--gray-600); }

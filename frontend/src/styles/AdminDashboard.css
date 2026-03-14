@@ -1,0 +1,142 @@
+.lms-admin-header {
+  margin-bottom: 2rem;
+}
+ 
+.lms-admin-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  color: var(--navy);
+  margin-bottom: 0.5rem;
+}
+ 
+.lms-admin-subtitle {
+  font-size: 0.95rem;
+  color: var(--gray-600);
+}
+ 
+.lms-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+ 
+.lms-stat-card {
+  background: var(--white);
+  padding: 1.5rem;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--gray-100);
+}
+ 
+.lms-stat-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--gray-600);
+  margin-bottom: 0.5rem;
+  display: block;
+}
+ 
+.lms-stat-value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--navy);
+}
+ 
+.lms-admin-tabs {
+  display: flex;
+  gap: 1.5rem;
+  border-bottom: 1px solid var(--gray-200);
+  margin-bottom: 2rem;
+}
+ 
+.lms-admin-tab {
+  padding: 0.8rem 1rem;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--gray-400);
+  background: none;
+  border: none;
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+  transition: all 0.2s;
+}
+ 
+.lms-admin-tab.active {
+  color: var(--navy);
+  border-bottom-color: var(--navy);
+}
+ 
+.lms-admin-table-container {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+}
+ 
+.lms-admin-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+ 
+.lms-admin-table th {
+  background: var(--gray-100);
+  padding: 1rem;
+  text-align: left;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--navy-light);
+}
+ 
+.lms-admin-table td {
+  padding: 1.1rem 1rem;
+  border-bottom: 1px solid var(--gray-100);
+  font-size: 0.9rem;
+  color: var(--navy);
+}
+ 
+.lms-admin-btn {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+ 
+.lms-admin-btn.primary {
+  background: var(--navy);
+  color: white;
+  border: none;
+}
+ 
+.lms-admin-btn.danger {
+  background: #fef1f2;
+  color: var(--danger);
+  border: 1px solid #fee2e2;
+}
+ 
+.lms-admin-btn:hover {
+  opacity: 0.85;
+}
+ 
+.lms-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+ 
+.lms-modal {
+  background: var(--white);
+  padding: 2rem;
+  border-radius: var(--radius-lg);
+  width: 100%;
+  max-width: 500px;
+  box-shadow: var(--shadow-lg);
+}

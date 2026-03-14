@@ -1,0 +1,137 @@
+.lms-profile-page {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+ 
+.lms-profile-header {
+  background: var(--white);
+  padding: 2.5rem;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  border: 1px solid var(--gray-100);
+}
+ 
+.lms-profile-avatar {
+  width: 100px;
+  height: 100px;
+  background: var(--navy);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+ 
+.lms-profile-info {
+  flex: 1;
+}
+ 
+.lms-profile-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  color: var(--navy);
+  margin-bottom: 0.25rem;
+}
+ 
+.lms-profile-email {
+  font-size: 1rem;
+  color: var(--gray-600);
+  margin-bottom: 1rem;
+}
+ 
+.lms-profile-badge {
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  background: var(--gray-100);
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--navy-light);
+  text-transform: capitalize;
+}
+ 
+.lms-profile-section {
+  background: var(--white);
+  padding: 2rem;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--gray-100);
+}
+ 
+.lms-profile-sec-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem;
+  color: var(--navy);
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+ 
+.lms-borrowed-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+ 
+.lms-borrowed-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background: var(--gray-100);
+  border-radius: var(--radius);
+  transition: transform 0.2s;
+}
+ 
+.lms-borrowed-item:hover {
+  transform: translateX(4px);
+}
+ 
+.lms-borrowed-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+ 
+.lms-borrowed-icon {
+  font-size: 1.5rem;
+}
+ 
+.lms-borrowed-details {
+  display: flex;
+  flex-direction: column;
+}
+ 
+.lms-borrowed-title {
+  font-weight: 600;
+  color: var(--navy);
+}
+ 
+.lms-borrowed-date {
+  font-size: 0.8rem;
+  color: var(--gray-600);
+}
+ 
+.lms-profile-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+ 
+@media (max-width: 768px) {
+  .lms-profile-header {
+    flex-direction: column;
+    text-align: center;
+  }
+  .lms-profile-form {
+    grid-template-columns: 1fr;
+  }
+}
